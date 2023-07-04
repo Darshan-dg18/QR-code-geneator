@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: #fff;
+    border-color: #fff;
+    
+} 
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    padding: 20px;
+    background: #0000;
+    color: #fff;
+    border-radius: 20px;
+    opacity: 1;
+}
+.backvideo{
+position: absolute;
+right: 0;
+bottom: 0;
+z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .backvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+.head h1{
+    color: #fff;
+    text-shadow:
+      0 0 7px rgb(252, 5, 170),
+      0 0 10px rgb(252, 5, 170),
+      0 0 21px rgb(252, 5, 170),
+      0 0 42px #bc13fe,
+      0 0 82px #bc13fe,
+      0 0 92px #bc13fe,
+      0 0 102px #bc13fe,
+      0 0 151px #bc13fe;
+      letter-spacing: 5px;
+      margin-bottom: 5px;
+      font-size: 50px;
+      font-weight: 200;
+      font-family: Monoton;
+}
+.text p{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(251, 250, 250);
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+input{
+    font-size: 25px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    font-weight: 900;
+    text-align: center;
+   
+}
+.form input::focus{
+    box-shadow: 3px 6px 9px rgba(62, 54, 54, 0.608);
+}
+input::placeholder{
+    padding:6px;
+    text-align: center;
+
+}
+button{
+    width: 100%;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 10px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border: #0000;
+    background: #111;
+    color: white;
+    padding: 6px;
+    transition: 0.4s;
+}
+button:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000,#ff7300,#fffb00,#48ff00,#00ffd5,#002bff,#7a00ff,#ff00c8,#ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+
+}
+button::after{
+    color: #0000;
+}
+button:active:after{
+    background: transparent;
+}
+button:hover:before{
+    opacity: 1;
+}
+button:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.but{
+    background: #0000;
+}
+.but:hover{
+    background-color: #fff;
+    color: orangered;
+   }
+
+
+.qrImage{
+    margin-top: 20px;
+   }
+.qrImage img{
+    width: 50%;
+   }
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="backvideo">
+        <source src="lines.mp4" type="video/mp4">
+    </video>
+<div class="container">
+    
+    <div class="head">
+        <h1>QR CODE GENERATOR</h1>
+    </div>
+    <div class="text">
+        <p>Paste a url or enter a text to create QR Code</p>
+    </div>
+    <div class="form">
+        <input type="text" spellcheck="false" placeholder="Enter Text or URL">
+        <button type="submit" class="but">CREATE CODE
+            <svg xml30ns="http://www.w3.org/2000/svg" width="25px" height="25px" style="background: #fff;"><path d="M4 4h5V2H2v7h2V4zM4 15H2v7h7v-2H4v-5zM15 2v2h5v5h2V2h-7zM20 20h-5v2h7v-7h-2v5z"/><path d="M6 11h5V6H6zm2-3h1v1H8zM18 6h-5v5h5zm-2 3h-1V8h1zM18 13h-5v5h5zm-2 3h-1v-1h1zM6 18h5v-5H6zm2-3h1v1H8z"/></svg>
+        </button>
+    </div>
+    <span id="loading"></span>
+    <div class="qrImage">
+        <img src="" >
+    </div>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>
