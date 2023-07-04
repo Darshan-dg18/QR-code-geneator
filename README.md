@@ -1,2 +1,2 @@
-# QR-code-geneator
-I have develop this project by using html css and javascript. 
+# QR-code-generator
+I have developed a QR code generator by using html css and javascript. 
